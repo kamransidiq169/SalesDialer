@@ -1,0 +1,484 @@
+
+> sales-dialer-backend@1.0.0 start
+> node server.js
+
+2026-06-01 11:07:36 [[32minfo[39m]: [32mWebSocket server initialized[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:07:36 [[32minfo[39m]: [32mServer running on port 5001[39m {
+  "service": "sales-dialer-api",
+  "environment": "development",
+  "port": "5001"
+}
+2026-06-01 11:07:36 [[32minfo[39m]: [32mAPI Documentation available at http://localhost:5001/api/docs[39m {
+  "service": "sales-dialer-api"
+}
+Database connected successfully
+2026-06-01 11:07:36 [[32minfo[39m]: [32mDatabase connected successfully[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:07:36 [[32minfo[39m]: [32mDatabase models synchronized[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:07:36 [[32minfo[39m]: [32mServer ready to accept connections[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:07:46 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:37:46 +0000] "POST /api/auth/login HTTP/1.1" 200 578 "-" "curl/8.7.1"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:08:00 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:38:00 +0000] "GET /api/contacts?limit=1 HTTP/1.1" 200 467 "-" "curl/8.7.1"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:08:00 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:38:00 +0000] "POST /api/contacts/import HTTP/1.1" 200 130 "-" "curl/8.7.1"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:08:00 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:38:00 +0000] "GET /api/contacts?limit=5&search=John HTTP/1.1" 200 476 "-" "curl/8.7.1"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:08:16 [[31merror[39m]: [31mServer Error: Only CSV files are allowed[39m {
+  "service": "sales-dialer-api",
+  "stack": "Error: Only CSV files are allowed\n    at fileFilter (/Users/user/sales-dialer/backend/src/routes/contacts.js:42:10)\n    at wrappedFileFilter (/Users/user/sales-dialer/backend/node_modules/multer/index.js:44:7)\n    at Multipart.<anonymous> (/Users/user/sales-dialer/backend/node_modules/multer/lib/make-middleware.js:109:7)\n    at Multipart.emit (node:events:508:28)\n    at HeaderParser.cb (/Users/user/sales-dialer/backend/node_modules/busboy/lib/types/multipart.js:358:14)\n    at HeaderParser.push (/Users/user/sales-dialer/backend/node_modules/busboy/lib/types/multipart.js:162:20)\n    at SBMH.ssCb [as _cb] (/Users/user/sales-dialer/backend/node_modules/busboy/lib/types/multipart.js:394:37)\n    at feed (/Users/user/sales-dialer/backend/node_modules/streamsearch/lib/sbmh.js:219:14)\n    at SBMH.push (/Users/user/sales-dialer/backend/node_modules/streamsearch/lib/sbmh.js:104:16)\n    at Multipart._write (/Users/user/sales-dialer/backend/node_modules/busboy/lib/types/multipart.js:567:19)",
+  "url": "/api/contacts/import",
+  "method": "POST",
+  "ip": "::1",
+  "requestId": "req_1780292296694_ipb4pw66k"
+}
+2026-06-01 11:08:16 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:38:16 +0000] "POST /api/contacts/import HTTP/1.1" 500 95 "-" "curl/8.7.1"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:08:16 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:38:16 +0000] "POST /api/contacts/import HTTP/1.1" 400 91 "-" "curl/8.7.1"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:08:16 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:38:16 +0000] "POST /api/contacts/import HTTP/1.1" 200 166 "-" "curl/8.7.1"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:08:29 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:38:29 +0000] "DELETE /api/contacts/459d15e0-2f23-4f3e-a7ef-84e88c48db72 HTTP/1.1" 200 95 "-" "curl/8.7.1"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:08:29 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:38:29 +0000] "GET /api/contacts?limit=1 HTTP/1.1" 200 467 "-" "curl/8.7.1"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:09:59 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:39:59 +0000] "POST /api/auth/login HTTP/1.1" 200 578 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:09:59 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:39:59 +0000] "GET /api/calls?page=1&limit=10&sortBy=startTime&order=desc HTTP/1.1" 200 5423 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:09:59 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:39:59 +0000] "GET /api/contacts?limit=100 HTTP/1.1" 200 2247 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:10:03 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:40:03 +0000] "GET /api/dashboard HTTP/1.1" 200 3109 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:10:03 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:40:03 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 2246 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:10:08 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:40:08 +0000] "GET /api/contacts?page=1&limit=10&search=kamran HTTP/1.1" 200 1946 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:10:14 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:40:14 +0000] "PUT /api/contacts/12967ce2-9044-4687-8090-4d7ab34fc52b HTTP/1.1" 200 379 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:10:14 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:40:14 +0000] "GET /api/contacts?page=1&limit=10&search=kamran HTTP/1.1" 200 1953 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:10:17 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:40:17 +0000] "GET /api/contacts?page=1&limit=10&search=kamran&status=interested HTTP/1.1" 200 476 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:10:19 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:40:19 +0000] "GET /api/dashboard HTTP/1.1" 200 3112 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:10:27 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:40:27 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 2253 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:10:37 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:40:37 +0000] "POST /api/contacts/import HTTP/1.1" 200 178 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:10:37 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:40:37 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 2253 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:15:14 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:45:14 +0000] "POST /api/contacts/import HTTP/1.1" 200 12775 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:15:14 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:45:14 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 2253 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:16:41 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:46:41 +0000] "POST /api/contacts/import HTTP/1.1" 200 130 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:16:41 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:46:41 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3144 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:16:57 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:46:57 +0000] "GET /api/contacts?page=2&limit=10 HTTP/1.1" 200 792 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:16:59 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:46:59 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3144 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:17:05 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:47:05 +0000] "GET /api/dashboard HTTP/1.1" 200 3114 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:17:24 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:47:24 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3144 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:17:30 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:47:30 +0000] "GET /api/contacts?limit=100 HTTP/1.1" 200 3751 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:17:34 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:47:34 +0000] "GET /api/contacts?limit=100 HTTP/1.1" 200 3751 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:17:34 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:05:47:34 +0000] "GET /api/calls?page=1&limit=10&sortBy=startTime&order=desc HTTP/1.1" 200 5423 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:32:56 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:02:56 +0000] "GET /api/contacts?limit=100 HTTP/1.1" 200 3751 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:32:56 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:02:56 +0000] "GET /api/calls?page=1&limit=10&sortBy=startTime&order=desc HTTP/1.1" 200 5423 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:40:40 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:10:40 +0000] "GET /api/auth/me HTTP/1.1" 200 323 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:40:40 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:10:40 +0000] "GET /api/auth/me HTTP/1.1" 200 323 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:40:40 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:10:40 +0000] "GET /api/contacts?limit=100 HTTP/1.1" 200 3751 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:40:40 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:10:40 +0000] "GET /api/calls?page=1&limit=10&sortBy=startTime&order=desc HTTP/1.1" 200 5423 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:40:47 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:10:47 +0000] "GET /api/auth/me HTTP/1.1" 200 323 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:40:47 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:10:47 +0000] "GET /api/auth/me HTTP/1.1" 200 323 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:40:47 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:10:47 +0000] "GET /api/dashboard HTTP/1.1" 200 3114 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:40:56 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:10:56 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3144 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:41:03 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:11:03 +0000] "GET /api/contacts?limit=100 HTTP/1.1" 200 3751 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:41:08 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:11:08 +0000] "GET /api/contacts?limit=100 HTTP/1.1" 200 3751 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:41:08 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:11:08 +0000] "GET /api/calls?page=1&limit=10&sortBy=startTime&order=desc HTTP/1.1" 200 5423 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:41:13 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:11:13 +0000] "GET /api/calls/7d41707c-d034-4148-a97b-40cd384b3647/notes HTTP/1.1" 200 93 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:41:15 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:11:15 +0000] "GET /api/calls/d3d3f367-6240-4aa6-b84d-f94114d358a3/notes HTTP/1.1" 200 603 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:41:18 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:11:18 +0000] "GET /api/dashboard HTTP/1.1" 200 3114 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:41:31 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:11:31 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3144 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:41:37 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:11:37 +0000] "GET /api/contacts?limit=100 HTTP/1.1" 200 3751 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:41:43 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:11:43 +0000] "GET /api/contacts?limit=100 HTTP/1.1" 200 3751 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:41:43 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:11:43 +0000] "GET /api/calls?page=1&limit=10&sortBy=startTime&order=desc HTTP/1.1" 200 5423 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:54:48 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:24:48 +0000] "GET /api/dashboard HTTP/1.1" 200 3114 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:54:52 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:24:52 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3144 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:54:59 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:24:59 +0000] "PUT /api/contacts/6d4aa3ee-1ab1-4ca5-8a56-fb0a3ba4de18 HTTP/1.1" 200 391 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:54:59 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:24:59 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3142 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:55:00 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:25:00 +0000] "GET /api/dashboard HTTP/1.1" 200 3114 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:55:05 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:25:05 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3142 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:55:16 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:25:16 +0000] "PUT /api/contacts/6d4aa3ee-1ab1-4ca5-8a56-fb0a3ba4de18 HTTP/1.1" 200 390 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:55:16 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:25:16 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3141 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:55:18 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:25:18 +0000] "GET /api/dashboard HTTP/1.1" 200 3113 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:55:20 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:25:20 +0000] "GET /api/auth/me HTTP/1.1" 200 323 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:55:20 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:25:20 +0000] "GET /api/auth/me HTTP/1.1" 200 323 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:55:20 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:25:20 +0000] "GET /api/dashboard HTTP/1.1" 200 3113 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 11:59:46 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:29:46 +0000] "GET /api/dashboard HTTP/1.1" 200 3113 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 12:00:05 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:30:05 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3141 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 12:00:07 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:30:07 +0000] "GET /api/dashboard HTTP/1.1" 200 3113 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 12:00:10 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:30:10 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3141 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 12:00:10 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:30:10 +0000] "GET /api/contacts?limit=100 HTTP/1.1" 200 3748 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 12:00:11 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:30:11 +0000] "GET /api/contacts?limit=100 HTTP/1.1" 200 3748 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 12:00:11 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:30:11 +0000] "GET /api/calls?page=1&limit=10&sortBy=startTime&order=desc HTTP/1.1" 200 5423 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 12:00:14 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:30:14 +0000] "GET /api/calls/e4f5525e-02f9-4a2c-95c1-4a3ecf8eabb5/notes HTTP/1.1" 200 528 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 12:00:16 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:30:16 +0000] "GET /api/calls/a5ec888c-e090-44a8-bf11-2c59488e2086/notes HTTP/1.1" 200 553 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 12:00:16 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:30:16 +0000] "GET /api/calls/d3d3f367-6240-4aa6-b84d-f94114d358a3/notes HTTP/1.1" 200 603 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 12:00:17 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:30:17 +0000] "GET /api/dashboard HTTP/1.1" 200 3113 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 12:10:14 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:40:14 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3141 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 12:10:14 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:40:14 +0000] "GET /api/dashboard HTTP/1.1" 200 3113 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 12:10:15 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:40:15 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3141 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 12:10:20 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:40:20 +0000] "PUT /api/contacts/d1c9353c-2ec9-4c41-97dc-1af1adef4d63 HTTP/1.1" 200 399 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 12:10:20 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:40:20 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3135 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 12:10:21 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:06:40:21 +0000] "GET /api/dashboard HTTP/1.1" 200 3114 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 14:22:50 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:08:52:50 +0000] "GET /api/auth/me HTTP/1.1" 200 323 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 14:22:50 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:08:52:50 +0000] "GET /api/auth/me HTTP/1.1" 200 323 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 14:22:50 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:08:52:50 +0000] "GET /api/dashboard HTTP/1.1" 200 3114 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 14:22:51 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:08:52:51 +0000] "GET /api/contacts?limit=100 HTTP/1.1" 200 3742 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 14:22:52 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:08:52:52 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3135 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 14:22:53 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:08:52:53 +0000] "GET /api/contacts?limit=100 HTTP/1.1" 200 3742 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 14:22:53 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:08:52:53 +0000] "GET /api/calls?page=1&limit=10&sortBy=startTime&order=desc HTTP/1.1" 200 5423 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 14:22:54 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:08:52:54 +0000] "GET /api/dashboard HTTP/1.1" 200 3114 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 16:58:22 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:11:28:22 +0000] "GET /api/dashboard HTTP/1.1" 200 3114 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 16:59:07 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:11:29:07 +0000] "GET /api/dashboard HTTP/1.1" 200 3114 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 17:06:12 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:11:36:12 +0000] "GET /api/dashboard HTTP/1.1" 200 3114 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 17:06:26 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:11:36:26 +0000] "GET /api/dashboard HTTP/1.1" 200 3114 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 17:06:41 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:11:36:41 +0000] "GET /api/dashboard HTTP/1.1" 200 3114 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 17:58:35 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:12:28:35 +0000] "GET /api/dashboard HTTP/1.1" 200 3114 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 18:09:36 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:12:39:36 +0000] "GET /api/dashboard HTTP/1.1" 200 3114 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 18:40:24 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:13:10:24 +0000] "GET /api/dashboard HTTP/1.1" 200 3114 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 23:24:26 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:17:54:26 +0000] "GET /api/auth/me HTTP/1.1" 200 323 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 23:24:27 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:17:54:27 +0000] "GET /api/auth/me HTTP/1.1" 200 323 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-01 23:24:27 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:17:54:27 +0000] "GET /api/dashboard HTTP/1.1" 200 3114 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:11:32 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:41:32 +0000] "GET /api/auth/me HTTP/1.1" 200 323 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:11:32 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:41:32 +0000] "GET /api/auth/me HTTP/1.1" 200 323 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:11:32 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:41:32 +0000] "GET /api/dashboard HTTP/1.1" 200 3113 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:12:39 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:42:39 +0000] "POST /api/auth/login HTTP/1.1" 200 578 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:12:40 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:42:40 +0000] "GET /api/dashboard HTTP/1.1" 200 3113 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:12:58 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:42:58 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3135 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:13:03 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:43:03 +0000] "GET /api/dashboard HTTP/1.1" 200 3113 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:13:07 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:43:07 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3135 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:13:09 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:43:09 +0000] "GET /api/contacts?limit=100 HTTP/1.1" 200 3742 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:13:09 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:43:09 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3135 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:14:00 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:44:00 +0000] "POST /api/contacts HTTP/1.1" 201 391 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:14:00 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:44:00 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3139 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:14:21 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:44:21 +0000] "GET /api/dashboard HTTP/1.1" 200 3113 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:14:27 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:44:27 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3139 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:14:31 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:44:31 +0000] "GET /api/dashboard HTTP/1.1" 200 3113 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:14:42 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:44:42 +0000] "GET /api/contacts?page=1&limit=10 HTTP/1.1" 200 3139 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:14:50 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:44:50 +0000] "GET /api/contacts?limit=100 HTTP/1.1" 200 4043 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:14:55 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:44:55 +0000] "GET /api/contacts/e99b3501-c978-4336-bccf-478ba8ec2edf HTTP/1.1" 200 393 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:14:58 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:44:58 +0000] "POST /api/calls/start HTTP/1.1" 201 710 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:15:11 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:45:11 +0000] "POST /api/calls/end HTTP/1.1" 200 415 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:15:19 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:45:19 +0000] "POST /api/calls/1d9c4dbb-9a23-4911-80a7-95e35f434c47/notes HTTP/1.1" 201 525 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:15:21 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:45:21 +0000] "GET /api/contacts?limit=100 HTTP/1.1" 200 4043 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:15:21 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:45:21 +0000] "GET /api/calls?page=1&limit=10&sortBy=startTime&order=desc HTTP/1.1" 200 6233 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:15:23 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:45:23 +0000] "GET /api/calls/1d9c4dbb-9a23-4911-80a7-95e35f434c47/notes HTTP/1.1" 200 532 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:15:39 [[31merror[39m]: [31mServer Error: SQLITE_ERROR: no such column: Call.date[39m {
+  "service": "sales-dialer-api",
+  "stack": "Error\n    at Database.<anonymous> (/Users/user/sales-dialer/backend/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)\n    at /Users/user/sales-dialer/backend/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50\n    at new Promise (<anonymous>)\n    at Query.run (/Users/user/sales-dialer/backend/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)\n    at /Users/user/sales-dialer/backend/node_modules/sequelize/lib/sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async SQLiteQueryInterface.select (/Users/user/sales-dialer/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)\n    at async Call.findAll (/Users/user/sales-dialer/backend/node_modules/sequelize/lib/model.js:1140:21)\n    at async Promise.all (index 1)\n    at async Call.findAndCountAll (/Users/user/sales-dialer/backend/node_modules/sequelize/lib/model.js:1322:27)",
+  "url": "/api/calls?page=1&limit=10&sortBy=date&order=asc",
+  "method": "GET",
+  "ip": "::1",
+  "requestId": "req_1780339539620_l2z6tyqze"
+}
+2026-06-02 00:15:39 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:45:39 +0000] "GET /api/calls?page=1&limit=10&sortBy=date&order=asc HTTP/1.1" 400 83 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:15:40 [[31merror[39m]: [31mServer Error: SQLITE_ERROR: no such column: Call.date[39m {
+  "service": "sales-dialer-api",
+  "stack": "Error\n    at Database.<anonymous> (/Users/user/sales-dialer/backend/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)\n    at /Users/user/sales-dialer/backend/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50\n    at new Promise (<anonymous>)\n    at Query.run (/Users/user/sales-dialer/backend/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)\n    at /Users/user/sales-dialer/backend/node_modules/sequelize/lib/sequelize.js:315:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async SQLiteQueryInterface.select (/Users/user/sales-dialer/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)\n    at async Call.findAll (/Users/user/sales-dialer/backend/node_modules/sequelize/lib/model.js:1140:21)\n    at async Promise.all (index 1)\n    at async Call.findAndCountAll (/Users/user/sales-dialer/backend/node_modules/sequelize/lib/model.js:1322:27)",
+  "url": "/api/calls?page=1&limit=10&sortBy=date&order=asc",
+  "method": "GET",
+  "ip": "::1",
+  "requestId": "req_1780339540672_matioobcz"
+}
+2026-06-02 00:15:40 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:45:40 +0000] "GET /api/calls?page=1&limit=10&sortBy=date&order=asc HTTP/1.1" 400 83 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:15:41 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:18:45:41 +0000] "GET /api/dashboard HTTP/1.1" 200 3117 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:42:47 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:19:12:47 +0000] "GET /api/auth/me HTTP/1.1" 200 323 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:42:47 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:19:12:47 +0000] "GET /api/auth/me HTTP/1.1" 200 323 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:42:47 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:19:12:47 +0000] "GET /api/auth/me HTTP/1.1" 200 323 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:42:47 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:19:12:47 +0000] "GET /api/auth/me HTTP/1.1" 200 323 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:42:47 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:19:12:47 +0000] "GET /api/dashboard HTTP/1.1" 200 3117 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 00:42:47 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:19:12:47 +0000] "GET /api/dashboard HTTP/1.1" 200 3117 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 01:00:18 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:19:30:18 +0000] "GET /api/dashboard HTTP/1.1" 200 3117 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 01:00:18 [[32mhttp[39m]: [32m::1 - - [01/Jun/2026:19:30:18 +0000] "GET /api/dashboard HTTP/1.1" 200 3117 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 06:34:15 [[32mhttp[39m]: [32m::1 - - [02/Jun/2026:01:04:15 +0000] "GET /api/dashboard HTTP/1.1" 200 3117 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 06:34:15 [[32mhttp[39m]: [32m::1 - - [02/Jun/2026:01:04:15 +0000] "GET /api/dashboard HTTP/1.1" 200 3117 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 07:24:36 [[32mhttp[39m]: [32m::1 - - [02/Jun/2026:01:54:36 +0000] "GET /api/dashboard HTTP/1.1" 200 3117 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 07:24:36 [[32mhttp[39m]: [32m::1 - - [02/Jun/2026:01:54:36 +0000] "GET /api/dashboard HTTP/1.1" 200 3117 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 09:19:08 [[32mhttp[39m]: [32m::1 - - [02/Jun/2026:03:49:08 +0000] "GET /api/dashboard HTTP/1.1" 200 3117 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-02 09:19:08 [[32mhttp[39m]: [32m::1 - - [02/Jun/2026:03:49:08 +0000] "GET /api/dashboard HTTP/1.1" 200 3117 "http://localhost:5174/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-03 11:51:22 [[32minfo[39m]: [32mSIGTERM received. Starting graceful shutdown...[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-03 11:51:22 [[32minfo[39m]: [32mHTTP server closed[39m {
+  "service": "sales-dialer-api"
+}
+2026-06-03 11:51:22 [[32minfo[39m]: [32mDatabase connection closed[39m {
+  "service": "sales-dialer-api"
+}

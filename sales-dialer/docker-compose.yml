@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+      - db-data:/app/data
+    environment:
+      - PORT=5000
+      - JWT_SECRET=super_secret_jwt_key_change_in_production
+      - JWT_EXPIRES_IN=7d
+      - DB_PATH=/app/data/database.sqlite
+      - NODE_ENV=development
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:5000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    environment:
+      - VITE_API_URL=/api
+
+volumes:
+  db-data:
